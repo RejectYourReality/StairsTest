@@ -33,4 +33,14 @@ public class StairsTest {
     public void fiveCubesShouldReturnTwoStairs() {
         assertEquals(2L, getNumberOfStairs(5));
     }
+
+    @Test
+    public void elevenCubesShouldReturnElevenStairs() {
+        assertEquals(11L, getNumberOfStairs(11));
+    }
+
+    @Test
+    public void twoOneTwoCubesShouldReturnManyStairs() {
+        assertEquals(995645335L, getNumberOfStairs(212));
+    }
 }
