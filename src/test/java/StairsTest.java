@@ -4,38 +4,33 @@ import static org.junit.Assert.assertEquals;
 
 public class StairsTest {
 
+    private long getNumberOfStairs(int cubes) {
+        Stairs stairs = new Stairs();
+        return stairs.calculateStairs(cubes);
+    }
+
     @Test
     public void zeroCubesShouldReturnZeroStairs() {
-        Stairs stairs = new Stairs();
-        long numberOfStairs = stairs.calculateStairs(0);
-        assertEquals(0L, numberOfStairs);
+        assertEquals(0L, getNumberOfStairs(0));
     }
 
     @Test
     public void twoCubesShouldReturnZeroStairs() {
-        Stairs stairs = new Stairs();
-        long numberOfStairs = stairs.calculateStairs(2);
-        assertEquals(0L, numberOfStairs);
+        assertEquals(0L, getNumberOfStairs(2));
     }
-    
+
     @Test
     public void threeCubesShouldReturnOneStairs() {
-        Stairs stairs = new Stairs();
-        long numberOfStairs = stairs.calculateStairs(3);
-        assertEquals(1L, numberOfStairs);
+        assertEquals(1L, getNumberOfStairs(3));
     }
 
     @Test
     public void fourCubesShouldReturnOneStairs() {
-        Stairs stairs = new Stairs();
-        long numberOfStairs = stairs.calculateStairs(4);
-        assertEquals(1L, numberOfStairs);
+        assertEquals(1L, getNumberOfStairs(4));
     }
 
     @Test
     public void fiveCubesShouldReturnTwoStairs() {
-        Stairs stairs = new Stairs();
-        long numberOfStairs = stairs.calculateStairs(5);
-        assertEquals(2L, numberOfStairs);
+        assertEquals(2L, getNumberOfStairs(5));
     }
 }
