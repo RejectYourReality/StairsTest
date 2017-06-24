@@ -24,4 +24,18 @@ public class StairsTest {
         long numberOfStairs = stairs.calculateStairs(3);
         assertEquals(1L, numberOfStairs);
     }
+
+    @Test
+    public void fourCubesShouldReturnOneStairs() {
+        Stairs stairs = new Stairs();
+        long numberOfStairs = stairs.calculateStairs(4);
+        assertEquals(1L, numberOfStairs);
+    }
+
+    @Test
+    public void fiveCubesShouldReturnTwoStairs() {
+        Stairs stairs = new Stairs();
+        long numberOfStairs = stairs.calculateStairs(5);
+        assertEquals(2L, numberOfStairs);
+    }
 }
