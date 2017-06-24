@@ -17,4 +17,11 @@ public class StairsTest {
         long numberOfStairs = stairs.calculateStairs(2);
         assertEquals(0L, numberOfStairs);
     }
+    
+    @Test
+    public void threeCubesShouldReturnOneStairs() {
+        Stairs stairs = new Stairs();
+        long numberOfStairs = stairs.calculateStairs(3);
+        assertEquals(1L, numberOfStairs);
+    }
 }
